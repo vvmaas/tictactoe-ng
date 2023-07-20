@@ -27,15 +27,15 @@ import { Component, Input } from '@angular/core';
     }
 
     .null {
-      background-color: #071e22;
+      background-color: #051821;
     }
 
     .X {
-      background-color: #1d7874;
+      background-color: #266867;
     }
 
     .O {
-      background-color: #ee2e31;
+      background-color: #f8bc24;
     }
     `
   ]
