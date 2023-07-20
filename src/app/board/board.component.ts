@@ -40,7 +40,7 @@ export class BoardComponent implements OnInit {
       this.moves++;
       console.log(this.moves);
     }
-
+ 
     this.winner = this.calculateWinner();
   }
 
