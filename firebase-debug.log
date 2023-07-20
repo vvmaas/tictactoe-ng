@@ -1,0 +1,57 @@
+[debug] [2023-07-20T20:35:24.488Z] ----------------------------------------------------------------------
+[debug] [2023-07-20T20:35:24.490Z] Command:       /home/victor/.nvm/versions/node/v16.16.0/bin/node /home/victor/.nvm/versions/node/v16.16.0/bin/firebase init hosting:github
+[debug] [2023-07-20T20:35:24.490Z] CLI Version:   12.4.5
+[debug] [2023-07-20T20:35:24.491Z] Platform:      linux
+[debug] [2023-07-20T20:35:24.491Z] Node Version:  v16.16.0
+[debug] [2023-07-20T20:35:24.491Z] Time:          Thu Jul 20 2023 17:35:24 GMT-0300 (Brasilia Standard Time)
+[debug] [2023-07-20T20:35:24.491Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-20T20:35:24.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-20T20:35:24.566Z] > authorizing via signed-in user (vhvermaas@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/victor/Documents/estudos/Angular/jdvelha
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-20T20:35:24.571Z] Using project from CLI flag: tictactoe-ng-8b376
+[debug] [2023-07-20T20:35:24.573Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tictactoe-ng-8b376 [none]
+[debug] [2023-07-20T20:35:25.014Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tictactoe-ng-8b376 200
+[debug] [2023-07-20T20:35:25.014Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tictactoe-ng-8b376 {"projectId":"tictactoe-ng-8b376","projectNumber":"277681005970","displayName":"tictactoe-ng","name":"projects/tictactoe-ng-8b376","resources":{"hostingSite":"tictactoe-ng-8b376"},"state":"ACTIVE","etag":"1_c37709ca-edcc-4dc1-9d81-61554c2a5bd9"}
+[info] i  Using project tictactoe-ng-8b376 (tictactoe-ng) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /home/victor/Documents/estudos/Angular/jdvelha 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=291251075&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-07-20T20:35:26.592Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-07-20T20:35:26.592Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-07-20T20:35:26.896Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-07-20T20:35:26.896Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-07-20T20:35:26.905Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-07-20T20:35:27.193Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-07-20T20:35:27.194Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"vvmaas","id":101278719,"node_id":"U_kgDOBglj_w","avatar_url":"https://avatars.githubusercontent.com/u/101278719?v=4","gravatar_id":"","url":"https://api.github.com/users/vvmaas","html_url":"https://github.com/vvmaas","followers_url":"https://api.github.com/users/vvmaas/followers","following_url":"https://api.github.com/users/vvmaas/following{/other_user}","gists_url":"https://api.github.com/users/vvmaas/gists{/gist_id}","starred_url":"https://api.github.com/users/vvmaas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/vvmaas/subscriptions","organizations_url":"https://api.github.com/users/vvmaas/orgs","repos_url":"https://api.github.com/users/vvmaas/repos","events_url":"https://api.github.com/users/vvmaas/events{/privacy}","received_events_url":"https://api.github.com/users/vvmaas/received_events","type":"User","site_admin":false,"name":"Victor Vermaas","company":null,"blog":"https://www.linkedin.com/in/vermaasvictor/","location":"Piraí - RJ","email":null,"hireable":null,"bio":"Be one with the code ☯","twitter_username":null,"public_repos":29,"public_gists":3,"followers":22,"following":31,"created_at":"2022-03-09T16:35:39Z","updated_at":"2023-07-03T18:31:58Z","private_gists":0,"total_private_repos":15,"owned_private_repos":15,"disk_usage":80914,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as vvmaas 
+[info] 
