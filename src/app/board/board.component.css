@@ -1,0 +1,51 @@
+.wrapper {
+    background-color: rgba(121, 38, 38, 0);
+    width: fit-content;
+    margin: auto auto;
+    padding: 20px calc(var(--buttonsize)/3.8) calc(var(--buttonsize)/3.8) calc(var(--buttonsize)/3.8);
+    margin-top: clamp(30px, 3vw, 90px);
+    margin-bottom: clamp(30px, 3vw, 90px);
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper button {
+    width: var(--buttonsize);
+    background-color: rgba(255, 255, 255, 0.067);
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 11px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    height: clamp(50px, 7vh, 50px);
+    font-size: clamp(11px, 3vw, 19px);
+    cursor: pointer;
+}
+
+.wrapper h1 {
+    font-size: clamp(25px, 5vw, 50px);
+    margin: 30px 0;
+}
+
+.wrapper h2 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    border-radius: 11px;
+    padding: 20px;
+    font-size: clamp(20px, 5.5vw, 40px);
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: var(--buttonsize) var(--buttonsize) var(--buttonsize);
+    grid-gap: 0px;
+}
+
+app-square {
+    border: 1px gray solid;
+    height: var(--buttonsize);
+}
